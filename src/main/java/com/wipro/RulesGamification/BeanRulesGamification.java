@@ -12,7 +12,7 @@ public class BeanRulesGamification {
 	
 	private String name;
 	private String toolName;
-	private double threshold;
+	private float threshold;
 	private String mName;
 	private String operator;
 	private int reward;
@@ -21,7 +21,7 @@ public class BeanRulesGamification {
 		
 	}
 	
-	public BeanRulesGamification(ObjectId _id, String name, String toolName, double threshold, String mName, String operator, int reward) {
+	public BeanRulesGamification(ObjectId _id, String name, String toolName, float threshold, String mName, String operator, int reward) {
 		super();
 		this._id = _id;
 		this.name = name;
