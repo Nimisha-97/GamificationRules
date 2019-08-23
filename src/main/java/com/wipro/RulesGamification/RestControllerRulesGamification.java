@@ -51,7 +51,7 @@ public class RestControllerRulesGamification {
 		query.addCriteria(
 		    new Criteria().andOperator(
 		        Criteria.where("name").is(game.getName()),
-		        Criteria.where("metric").is(game.getMetric()),
+		        Criteria.where("toolName").is(game.gettoolName()),
 		        Criteria.where("threshold").is(game.getThreshold()),
 		        Criteria.where("mName").is(game.getmName()),
 		        Criteria.where("operator").is(game.getOperator()),
