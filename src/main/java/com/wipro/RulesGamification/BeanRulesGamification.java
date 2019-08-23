@@ -11,7 +11,7 @@ public class BeanRulesGamification {
 	public ObjectId _id;
 	
 	private String name;
-	private String metric;
+	private String toolName;
 	private double threshold;
 	private String mName;
 	private String operator;
@@ -21,11 +21,11 @@ public class BeanRulesGamification {
 		
 	}
 	
-	public BeanRulesGamification(ObjectId _id, String name, String metric, double threshold, String mName, String operator, int reward) {
+	public BeanRulesGamification(ObjectId _id, String name, String toolName, double threshold, String mName, String operator, int reward) {
 		super();
 		this._id = _id;
 		this.name = name;
-		this.metric = metric;
+		this.toolName = toolName;
 		this.threshold=threshold;
 		this.mName = mName;
 		this.operator = operator;
@@ -42,47 +42,36 @@ public class BeanRulesGamification {
     public String getName() {
 		return name;
 	}
-
 	public void setName(String name) {
 		this.name = name;
 	}
-
-	public String getMetric() {
-		return metric;
+	public String gettoolName() {
+		return toolName;
 	}
-
-	public void setMetric(String metric) {
-		this.metric = metric;
+	public void settoolName(String toolName) {
+		this.toolName = toolName;
 	}
-
-	public double getThreshold() {
+	public float getThreshold() {
 		return threshold;
 	}
-
-	public void setThreshold(double threshold) {
+	public void setThreshold(float threshold) {
 		this.threshold = threshold;
 	}
-
 	public String getmName() {
 		return mName;
 	}
-
 	public void setmName(String mName) {
 		this.mName = mName;
 	}
-
 	public String getOperator() {
 		return operator;
 	}
-
 	public void setOperator(String operator) {
 		this.operator = operator;
 	}
-
 	public int getReward() {
 		return reward;
 	}
-
 	public void setReward(int reward) {
 		this.reward = reward;
 	}
